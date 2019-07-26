@@ -1,0 +1,16 @@
+<div>
+  <a href="/new_message">Add a message</a>
+</div>
+
+<%if @board.any? == true %>
+  <% @board.each do |message| %>
+  <div class="user_post">
+    <p>Name: <%= message.author %></p>
+    <a href="/post/<%= message.id %>">View Post</a>
+    <a href="/post/<%= message.id %>/edit">Edit Post</a>
+    <p><%= message.content %></p>
+  </div>
+  <% end %>
+<% else %>
+<p>Post something!</p>
+<% end %>

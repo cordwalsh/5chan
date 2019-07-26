@@ -1,0 +1,9 @@
+
+<h2><%= @post.author %> wrote: </h2>
+<p>Update post</p>
+<form class="" action="/update/<%=@post.id%>" method="post">
+  <input type="text" name="new_content" value="<%= @post.content %>">
+  <button type="submit">Submit</button>
+</form>
+
+<a href="/">Return home</a>

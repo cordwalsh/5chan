@@ -1,0 +1,18 @@
+body{
+  background-color: lightblue;
+}
+label{
+  display: block;
+}
+input{
+  display: block;
+}
+
+.user_post{
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+  padding: 5px;
+  background-color: tan;
+  overflow: hidden;
+}
